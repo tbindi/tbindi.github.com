@@ -6,7 +6,45 @@ permalink: /project/
 
   <div class="main-content">
   <h3><a id="project" class="anchor" href="#project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adv Science Gateway Architecture</h3>
-    <p>Section 1 : Report
+	<p>Two-Phase Commit
+      <ul>
+  	<li>What was the problem you tried to solve?</li>
+	      There is an open problem in Apache Airavata to obtain consistency over all the databases distributed and bound to microservices. There are many ways to obtain consistency. Eventual consistency can be an option if the data need not be updated across all databases. 
+	<li>How did you solve it?</li>
+	     There are 2 ways to solve it: Eventual Consistency and Immediate Consistency. 
+	     This git link explains eventual consistency: <a target="_blank" href="https://github.com/airavata-courses/spring17-microservice-data-management">Microservice Data Management through Event-Driven Approach</a> 
+	     To obtain immediate consistency we need to utilise Two Phase Commit. Two Phase Commit has 2 phases as the name says. 
+	      <ul>
+		      <li> Phase 1: Prepare Phase </li>
+		      <li> Phase 2: Commit Phase </li>
+	      </ul>
+	      
+	<li>How did you evaluate your solution?</li>
+	      
+      </ul><br>
+	Section 2 : Wiki
+      <ul>
+	      <li>Link to Wiki</li>
+      </ul><br>
+	  Section 3 : Git Commits
+      <ul>
+  		  <li>List of git commits:<li>
+	      
+      </ul><br>
+	  Section 4 : Discussion on Developer List 
+      <ul>
+
+      </ul><br>
+	  Section 5 : Airavata Jira 
+      <ul>
+
+      </ul><br>
+	  Section 6 : Airavata Pull Requests
+      <ul>
+
+      </ul><br>
+	  </p>
+    <p> Laravel Portal Project
       <ul>
   	<li>What was the problem you tried to solve?</li>
 	      Deploying of Laravel on Amazon instance and containerizing the portal in docker. I had to make the portal work with the install scripts which will not be dependant on the system that it's running.
