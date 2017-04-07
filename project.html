@@ -6,11 +6,16 @@ permalink: /project/
 
   <div class="main-content">
   <h3><a id="project" class="anchor" href="#project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adv Science Gateway Architecture</h3>
-	<p>Two-Phase Commit
+	<p align="justify">Two-Phase Commit
       <ul>
   	<li>What was the problem you tried to solve?</li>
+	      <br>
+	      <p align="justify">
 	      There is an open problem in Apache Airavata to obtain consistency over all the databases distributed and bound to microservices. There are many ways to obtain consistency. Eventual consistency can be an option if the data need not be updated across all databases. <br>
+	      </p>
 	<li>How did you solve it?</li>
+	      <br>
+	      <p align="justify">
 	     There are 2 ways to solve it: Eventual Consistency and Immediate Consistency. 
 	     This git link explains eventual consistency: <a target="_blank" href="https://github.com/airavata-courses/spring17-microservice-data-management">Microservice Data Management through Event-Driven Approach</a> 
 	     To obtain immediate consistency we need to utilise Two Phase Commit. Two Phase Commit has 2 phases as the name says. <br>
@@ -35,8 +40,12 @@ permalink: /project/
 	      <br>
 	      If any of the step fails after Step 2. Microservice A will be responsible in sending a rollback request to all the microservices. This approach becomes synchronous in that it has to wait for all the related services to reply to the initiating service. This is just one of the two approach in Two-phase commit.
 	      <br>
+	      </p>
 	<li>How did you evaluate your solution?</li>
+	      <br>
+	  <p align="justify">
 	      We are currently in process of evaluating the solution. In Apache Airavata no two microservices are tightly bound. Hence it does not require all of the microservice to be immediately consistent. But we are trying to come across a scenario where this apporach can be utilised for the data to be available. Although some of the implementations of two-phase comes with an asynchronous transaction manager this has to be evaluated in terms of time taken. 
+	  </p>
       </ul><br>
 	Section 2 : Wiki
       <ul>
@@ -45,7 +54,7 @@ permalink: /project/
       </ul><br>
 	  Section 3 : Git Commits
       <ul>
-  		  <li>List of git commits:<li>
+  		  <li>List of git commits:</li>
       </ul><br>
 	  Section 4 : Discussion on Developer List 
       <ul>
@@ -66,18 +75,18 @@ permalink: /project/
 	      Then copy `.env.example` to `.env` to generate key and run the server. 3 portals will be exposed 3000, 4000 and 5000 for laravel portal.
 	<li>How did you evaluate your solution?</li>
 	      Portal once exposed from docker it can be accessed outside as well. So once you go to the particular portal:port via browser this will be open. 
-      </ul><br>
+      </ul>
 	Section 2 : Wiki
       <ul>
 	      <li>Link to Wiki</li>
-      </ul><br>
+      </ul>
 	  Section 3 : Git Commits
       <ul>
-  		  <li>List of git commits:<li>
-	      	<li><a target="_blank" href="https://github.com/airavata-courses/spring17-laravel-portal/issues/10">Issues with script.sh while running from outside #10</a></li>
+	      <li>List of git commits:</li>
+	      <li><a target="_blank" href="https://github.com/airavata-courses/spring17-laravel-portal/issues/10">Issues with script.sh while running from outside #10</a></li>
 	      <li><a target="_blank" href="https://github.com/airavata-courses/spring17-laravel-portal/issues/8">Containerizing Laravel Portal from running on the instance #8</a></li>
 	      <li><a target="_blank" href="https://github.com/airavata-courses/spring17-laravel-portal/issues/6">Setup Laravel to work on remote instance #6</a></li>
-      </ul><br>
+      </ul>
 <!-- 	  Section 4 : Discussion on Developer List 
       <ul>
   		  <li>Have not started any discussion on the dev list but planning to</li>
@@ -89,6 +98,6 @@ permalink: /project/
 	  Section 6 : Airavata Pull Requests
       <ul>
   		  <li>There has been no pull requests yet but I am planning to do it.</li>
-      </ul><br> -->
+      </ul><br>-->
 	  </p>
   </div>
