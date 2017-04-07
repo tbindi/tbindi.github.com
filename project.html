@@ -19,15 +19,18 @@ permalink: /project/
 	     There are 2 ways to solve it: Eventual Consistency and Immediate Consistency. 
 	     This git link explains eventual consistency: <a target="_blank" href="https://github.com/airavata-courses/spring17-microservice-data-management">Microservice Data Management through Event-Driven Approach</a> 
 	     To obtain immediate consistency we need to utilise Two Phase Commit. Two Phase Commit has 2 phases as the name says. <br>
+	      </p>
 	      <ul>
 		      <li> Phase 1: Prepare Phase </li>
 		      	
 		      <li> Phase 2: Commit Phase </li>
 	      </ul><br>
+	      <p align="justify">
 	      More about this is explained here: <a target="_blank" href="https://github.com/airavata-courses/spring17-microservice-data-management/wiki/Two-Phase-Commit-Explained">Two-Phase Commit Explained</a> <br>
 	      In case of a Distributed system that has microservice implemented and each of the database is tightly bound to the microservice implementation. In this case there should be a Global Transaction Manager which will have all the data sources connected to it directly. This also means that the transaction manager consists of database schemas. 
 	      Once one of the microservice initiates a transaction it has to go through the global transaction manager which triggers a prepare phase. Once the prepare phase is gone through successfully only then it triggers the commit phase. At this point all of the database related activities must be performed within one transaction module. Having a global transaction manager is one of the approach. 
 	      There are other approaches such as in this link: <a target="_blank" href="http://blog.aspiresys.com/software-product-engineering/producteering/distributed-transactions-in-microservices/">Ditributed Transactions in Microservices</a>.
+	      </p>
 	      <br>
 	      Steps involved in the non-global transaction manager approach:
 	      <ul>
@@ -38,6 +41,7 @@ permalink: /project/
 		      <li>Step 5: After all of them acknowledge the successsful commit, Microservice will commit to it's own. </li>
 	      </ul>
 	      <br>
+	      <p align="justify">
 	      If any of the step fails after Step 2. Microservice A will be responsible in sending a rollback request to all the microservices. This approach becomes synchronous in that it has to wait for all the related services to reply to the initiating service. This is just one of the two approach in Two-phase commit.
 	      <br>
 	      </p>
@@ -50,7 +54,9 @@ permalink: /project/
 	Section 2 : Wiki
       <ul>
 	      <li>Link to Wiki</li>
+	      <ul>
 	      <li> <a target="_blank" href="https://github.com/airavata-courses/spring17-microservice-data-management/wiki/Two-Phase-Commit-Explained">Two-Phase Commit Explained</a> </li>
+	      </ul>
       </ul><br>
 	  Section 3 : Git Commits
       <ul>
@@ -83,9 +89,11 @@ permalink: /project/
 	  Section 3 : Git Commits
       <ul>
 	      <li>List of git commits:</li>
+	      <ul>
 	      <li><a target="_blank" href="https://github.com/airavata-courses/spring17-laravel-portal/issues/10">Issues with script.sh while running from outside #10</a></li>
 	      <li><a target="_blank" href="https://github.com/airavata-courses/spring17-laravel-portal/issues/8">Containerizing Laravel Portal from running on the instance #8</a></li>
 	      <li><a target="_blank" href="https://github.com/airavata-courses/spring17-laravel-portal/issues/6">Setup Laravel to work on remote instance #6</a></li>
+	      </ul>
       </ul>
 <!-- 	  Section 4 : Discussion on Developer List 
       <ul>
